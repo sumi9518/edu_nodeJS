@@ -5,7 +5,7 @@ const data = {
   age: "Please enter your age",
 };
 
-fs.appendFileSync("data.txt", JSON.stringify(data), (err) => {
+fs.appendFileSync("data.txt", "\n" + JSON.stringify(data), (err) => {
   if (err) {
     console.log(err);
   } else {
